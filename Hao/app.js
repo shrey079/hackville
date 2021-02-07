@@ -8,7 +8,7 @@ app.use(express.static('public')); /* this line tells Express to use the public 
 // Replies to get request for the root dir on localhost::3000
 app.get('/', (req, res) => { 
     // ***************  Send the index(home) page ********************
-     res.sendFile('index.html');
+     res.sendFile('about.html');
 })
 
 // Replies to get requests for "/about" on localhost::3000
@@ -20,7 +20,7 @@ app.get('/about', (req, res) => {
 // just in case someone tries to go to a page that doesn't exist we can send them back to the root page
 app.get('/:trash', (req, res) => { 
     // ***************  Send the home page ********************
-     res.sendFile('index.html');
+     res.sendFile('about.html');
 })
 
 
