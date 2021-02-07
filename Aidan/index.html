@@ -1,0 +1,1734 @@
+  <!DOCTYPE html>
+
+
+  <html lang="en" dir="ltr">
+
+
+  <head>
+
+
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <style>
+
+
+  html {
+
+
+  scroll-behavior: smooth;
+
+
+  }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+  </head>
+
+
+  <body>
+
+
+
+
+
+
+  <header>
+
+
+  <div class="inner-width" id="top">
+
+
+  <a href="" class="logo1"><img src="assets/logo.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></a>
+
+
+
+
+
+
+  <a href="" class="logo"><img src="assets/logotxt.png"></a>
+
+
+
+
+
+
+  <i class="menu-toggle-btn fas fa-bars"></i>
+
+
+
+
+
+
+  <nav class="navigation-menu">
+
+
+
+
+
+
+  <a href="index.html"style="color: white;" ><i class="fas fa-home home"></i>Home</a>
+  <a href="main.html"style="color: white;"><i class="fab fa-buffer works"></i>Games</a>
+  <a href="news.html"style="color: white;"><i class="fas fa-users team"></i>News</a>
+  <a href="index.html#footer" style="color: white;"><i class="fas fa-headset contact"></i>Contact</a>
+
+
+  <a href="index.html#learn"style="color: white;"><i class="fas fa-align-left about"></i>Learn</a>
+
+
+
+
+
+
+  </nav>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  </header>
+
+
+
+
+
+
+
+
+
+
+  <style>
+
+  *{
+
+
+  margin: 0;
+
+
+  padding: 0;
+
+
+  text-decoration: none;
+
+
+
+
+  }
+
+  header{
+
+
+  height: 90px;
+
+
+  background: linear-gradient(to right, orange, tomato );
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+  width: 100%;
+
+
+  }
+
+
+  .inner-width{
+
+
+  max-width: 1000px;
+
+
+  padding: 0 10px;
+
+
+  margin: auto;
+
+
+  }
+
+
+
+
+
+
+  .logo{
+
+
+  float: left;
+
+
+  padding: 20px 0;
+
+
+  margin-top: 4px;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+  .logo img{
+
+
+  height: 30px;
+
+
+  }
+
+
+  .logo1{
+
+
+  float: left;
+
+
+  padding: 20px 0;
+
+
+  margin-top: -10px;
+
+
+  }
+
+
+
+
+
+
+  .logo1 img{
+
+
+  height: 80px;
+
+  margin-top: -8px;
+
+  border-radius: 4px;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu{
+
+
+  float: right;
+
+
+  display: flex;
+
+
+  align-items: center;
+
+
+  min-height: 90px;
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu a{
+
+
+  margin-left: 10px;
+
+
+  color: #ddd;
+
+
+  text-transform: uppercase;
+
+
+  font-size: 18spx;
+
+
+  padding: 12px 20px;
+
+
+  border-radius: 4px;
+
+
+  transition: .3s linear;
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu a:hover{
+
+
+  background: #fff;
+
+
+  color: #2f3640;
+
+
+  transform: scale(1.1);
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu i{
+
+
+  margin-right: 8px;
+
+
+  font-size: 16px;
+
+
+  }
+
+
+
+
+
+
+  .home{
+
+
+  color: #ff6b6b;
+
+
+  }
+
+
+
+
+
+
+  .about{
+
+
+  color: #56F0FF;
+
+
+  }
+
+
+
+
+
+
+  .works{
+
+
+  color: #feca57;
+
+
+  }
+
+
+
+
+
+
+  .team{
+
+
+  color: #5f27cd;
+
+
+  }
+
+
+
+
+
+
+  .contact{
+
+
+  color: #1dd1a1;
+
+
+  }
+
+
+
+
+
+
+  .menu-toggle-btn{
+
+
+
+
+
+
+  float: right;
+
+
+
+
+
+
+  height: 90px;
+
+
+
+
+
+
+  line-height: 90px !important;
+
+
+
+
+
+
+
+
+
+
+  color: #fff;
+
+
+
+
+
+
+  font-size: 26px;
+
+
+
+
+
+
+  display: none !important;
+
+
+
+
+
+
+  cursor: pointer;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:700px) {
+
+
+
+
+
+
+  .menu-toggle-btn{
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+  .navigation-menu{
+
+
+
+
+
+
+  position: fixed;
+
+
+
+
+
+
+  width: 100%;
+
+
+
+
+
+
+  max-width: 400px;
+  background: #172b4d;
+  top: 90px;
+  right: 0;
+  display: none;
+  padding: 20px 40px;
+  box-sizing: border-box;
+
+  }
+
+  .navigation-menu::before{
+
+  content: "";
+
+  border-left: 10px solid transparent;
+
+  border-bottom: 10px solid #172b4d;
+
+
+
+
+
+
+  position: absolute;
+
+
+
+
+
+
+  top: -10px;
+
+
+
+
+
+
+  right: 10px;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu a{
+
+
+
+
+
+
+  display: block;
+
+
+
+
+
+
+  margin: 10px 0;
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu.active{
+
+
+
+
+
+
+  display: block;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+  </style>
+
+
+
+
+
+
+  <script>
+
+
+
+
+
+
+  $(".menu-toggle-btn").click(function(){
+
+
+  $(this).toggleClass("fa-times");
+
+
+  $(".navigation-menu").toggleClass("active");
+
+
+  });
+
+
+  </script>
+
+  <body>
+  <div id="img">
+  <br><br>
+
+  <center><p style="font-size: 80px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Welcome to Climate Buddy</b></p>
+  <br>
+  <br><br>
+  </div><div id="bck">
+    <br><br>
+    <div class="button_cont" align="center"><a class="example_c" href="" rel="nofollow noopener"> L e t ' s  &nbsp;g e t&nbsp; s t a r t e d ! </a></div>
+    <style>
+      .example_c {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    border-radius: 6px;
+    }
+
+    .example_c:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    }
+    </style>
+  <style>
+  #img {
+    background: linear-gradient(to right, orange, tomato );
+  width: 100%;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+  }
+  </style>
+  <center><b><h1 class="ml14">
+    <span class="text-wrapper">
+      <span class="letters">About us</span>
+      <span class="line"></span>
+    </span>
+  </h1></b></center>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <style>
+    .ml14 {
+    font-weight: 650;
+    font-size: 6em;
+    color: #262526F2;
+   text-shadow: 4px 4px 10px tomato;
+  }
+
+  .ml14 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+
+  .ml14 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 100% 100%;
+    bottom: 0;
+  }
+
+  .ml14 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  </style>
+  <script>
+    var textWrapper = document.querySelector('.ml14 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml14 .line',
+      scaleX: [0,1],
+      opacity: [0.5,1],
+      easing: "easeInOutExpo",
+      duration: 900
+    }).add({
+      targets: '.ml14 .letter',
+      opacity: [0,1],
+      translateX: [40,0],
+      translateZ: 0,
+      scaleX: [0.3, 1],
+      easing: "easeOutExpo",
+      duration: 800,
+      offset: '-=600',
+      delay: (el, i) => 150 + 25 * i
+    }).add({
+      targets: '.ml14',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    });
+    </script>
+    <center><div id="txt" style="width: 60%;">
+
+
+        <center><textarea id="textbox" disabled="disabled">
+          Welcome to Climate Buddy! On this site we host all sorts of educational content that focus on informing users about global warming and how real this threat is. You can read our articles and play our games that have been designed to show the user how much of an impact global warming is making on the world.
+
+          </textarea><center>
+
+      <div class="btn" id="learn" style="width: auto; margin: 0 auto;margin-top: 10px;width: 300px;">Convert to Speech</div>
+      <style>
+
+      textarea { text-align:center;width:70%;color: black; margin: 0 auto; border: 2px solid black; background-color: white; min-height: 200px; font-size: 1.28em; line-height:1.2em; border: none;padding: 15px; font-weight: normal; border-radius: 6px; }
+
+      .btn {
+        display: inline-block;
+        margin: 15px 15px 0;
+        padding: .6em 1.1em;
+        font-size: 26px;
+        font-size: 1.625rem;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: tomato;
+        border-radius: 3px;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        -webkit-box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+        box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+        border: none;
+        -webkit-transition: -webkit-box-shadow .3s;
+        transition: box-shadow .3s;
+      }
+      .btn:hover, a.btn:focus {
+        -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+        box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+        -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+        transition-timing-function: cubic -bezier(0.6, 4, 0.3, 0.8);
+        -webkit-animation: gelatine 0.5s 1;
+        animation: gelatine 0.5s 1;
+      }
+
+
+      .btn:active,
+      .btn-secondary:active {
+        background: #4ecdc4;
+        -webkit-transition-duration: 0;
+        transition-duration: 0;
+        -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+        box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+      }
+
+
+      @keyframes gelatine {
+        from, to {
+          -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+        }
+
+        25% {
+          -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+          }
+
+        50% {
+          -webkit-transform: scale(1.1, 0.9);
+          transform: scale(1.1, 0.9);
+        }
+
+        75% {
+          -webkit-transform: scale(0.95, 1.05);
+          transform: scale(0.95, 1.05);
+        }
+
+        from, to {
+          -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+        }
+
+        25% {
+          -webkit-transform: scale(0.9, 1.1);
+          transform: scale(0.9, 1.1);
+        }
+
+        50% {
+          -webkit-transform: scale(1.1, 0.9);
+          transform: scale(1.1, 0.9);
+        }`
+
+        75% {
+          -webkit-transform: scale(0.95, 1.05);
+          transform: scale(0.95, 1.05);
+        }
+      }
+      @-webkit-keyframes gelatine {
+        from, to {
+          -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+        }
+
+        25% {
+          -webkit-transform: scale(0.9, 1.1);
+          transform: scale(0.9, 1.1);
+        }
+
+        50% {
+          -webkit-transform: scale(1.1, 0.9);
+          transform: scale(1.1, 0.9);
+        }
+
+        75% {
+          -webkit-transform: scale(0.95, 1.05);
+          transform: scale(0.95, 1.05);
+        }
+
+        from, to {
+          -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+        }
+
+        25% {
+          -webkit-transform: scale(0.9, 1.1);
+          transform: scale(0.9, 1.1);
+        }
+
+        50% {
+          -webkit-transform: scale(1.1, 0.9);
+          transform: scale(1.1, 0.9);
+        }
+
+        75% {
+          -webkit-transform: scale(0.95, 1.05);
+          transform: scale(0.95, 1.05);
+        }
+      }
+
+      </style>
+
+
+  </div></center>
+    <div id="#root">
+      <div class="card-wrapper">
+       <div class="card-header">
+
+          <center><h1>What we offer</h1></center>
+         <div class="points">
+          </div>
+        </div>
+        <div class="card-content">
+          <ul class="card-tabs">
+            <li class="card-tabs-item active" style="font-size: 22px; color: white"><a href="#item-1">Games</a></li>&emsp;&emsp;
+            <li class="card-tabs-item" style="font-size: 22px; color: white"><a href="#item-2">Learn</a></li>&emsp;&emsp;
+            <li class="card-tabs-item" style="font-size: 22px; color: white"><a href="#item-3">News</a></li>
+          </ul>
+          <div class="card-info active" id="item-1">
+
+            <div class="pokemon-stats">
+          <center>      <h1 class="ml9">
+      <span class="text-wrapper">
+        <span class="letters" style="color: black;">Free games</span>
+        <center><p style="color: black  ; text-shadow: 8px 8px 15px white; font-size:18px;">With website name we provide free games to anybody that teaches them about global warming and impacts it may have on ours and other lives</p></center>
+
+      </span>
+      </h1>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <style>
+      .ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 2.9em;
+    }
+
+    .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+    }
+
+    .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+    }
+    </style>
+    <script>
+      var textWrapper = document.querySelector('.ml9 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+    .add({
+      targets: '.ml9 .letter',
+      scale: [0, 1],
+      duration: 1500,
+      elasticity: 600,
+      delay: (el, i) => 45 * (i+1)
+    }).add({
+      targets: '.ml9',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    });
+    </script>
+              </div>
+
+            </div>
+            <div class="card-info" id="item-2">
+              <h1 class="ml9">
+           <span class="text-wrapper">
+           <span class="letters" style="color: black;">Learn  </span>
+           <center><p style="color: black  ; text-shadow: 8px 8px 15px white; font-size:18px;"> You can learn about global warming and it's impact on the world. You can learn though <a href="news.html" style="font-size: 18px; color: tomato;">news articles</a> or you can learn about global waring throught out <a href="main.html" style="font-size: 18px; color: tomato;">educational games</a></p></center>
+
+           </span>
+           </h1>
+
+            </div>
+              <div class="card-info" id="item-3">    <h1 class="ml9">
+          <span class="text-wrapper">
+            <span class="letters" style="color: black;">News </span>
+            <center><p style="color: black  ; text-shadow: 8px 8px 15px white; font-size:18px;">We offer news articles here on website name that help educate users about global warming and spread the world of this very real threat. <a href="news.html" style="color: tomato;">Our news.</a></p></center>
+
+          </span>
+          </h1></div>
+            <div class="card-info" id="item-4">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+    :root {
+
+      --pink: tomato;
+  }
+
+
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    color: var(--white);
+    width: 500px;
+  }
+
+  .card-nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .card-nav i {
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .card-header {
+    background-color: var(--pink);
+    padding: 20px;
+    position: relative;
+    padding-bottom: 40px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-header h2 {
+    text-transform: capitalize;
+    font-size: 1.25em;
+  }
+
+  .card-content {
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    position: relative;
+    top: -10px;
+    color: var(--black);
+    background-image: url('https://files.gamebanana.com/img/ss/gamefiles/5c2d2283e26c8.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  }
+
+  .character-image {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+  }
+
+  .pills-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pills-list-item {
+    background-color: var(--white-opacity);
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin-right: 0.25em;
+  }
+
+  .points {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-tabs {
+    list-style: none;
+    padding: 15px 0 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .card-tabs-item {
+    margin-right: 10px;
+  }
+
+  .card-tabs-item:last-child {
+    margin-right: 0;
+  }
+
+  .card-tabs-item a {
+    text-decoration: none;
+    color: var(--black);
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+  }
+
+  .card-tabs-item.active a {
+    border-bottom: 1px solid var(--black);
+  }
+
+  .card-info {
+    display: none;
+    margin-top: 15px;
+  }
+
+  .card-info.active {
+    display: block;
+  }
+
+  .pokemon-stats {
+    border-radius: 20px;
+    box-shadow: 0 5px 13px 2px var(--black-opacity);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .pokemon-stats p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0.5em 0;
+    color: var(--grey);
+  }
+
+  .pokemon-stats p span {
+    margin-top: 0.25em;
+    color: var(--black);
+  }
+
+  </style>
+  <script>
+    $(".card-tabs li").click(function() {
+    $(".card-tabs li").removeClass("active");
+    $(this).addClass("active");
+    $(".card-info").hide();
+
+    var activeTab = $(this)
+      .find("a")
+      .attr("href");
+    $(activeTab).fadeIn();
+    return false;
+  });
+
+
+  function getInfo(){
+     let id = 300;
+
+
+    $.get("https://pokeapi.co/api/v2/pokemon/" + id + "/", function(
+      data,
+      status
+    ) {
+      console.log(data, status)
+
+      $("#pokemonName").text(data.name);
+      $("#pokemonHeight").text((data.height) / 10 + 'cm');
+      $("#pokemonWeight").text((data.weight) / 10 + 'kg');
+
+      $(".character-image").attr("src", data.sprites.front_default);
+
+      $(".pills-list").html("");
+      for (var x = 0; x < data.types.length; x++) {
+        $(".pills-list").append(
+          `<li class="pills-list-item">` + data.types[x].type.name + `</li>`
+        );
+      }
+    });
+  };
+
+  function getColor() {
+    let id = 25;
+    $.get("https://pokeapi.co/api/v2/pokemon-color/" + id + "/", function(
+      data,
+      status
+    ) {
+      console.log(data);
+    }
+  )};
+
+
+  getInfo();
+  getColor();
+
+  </script>
+
+  <Script>
+    $( document ).ready(function() {
+
+  var utterance = new window.SpeechSynthesisUtterance();
+      utterance.volume = 1;
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.lang = 'en-US';
+  delay = 10000000000000000000000000;
+
+    $('.btn').on('click', function(){
+          var words = new SpeechSynthesisUtterance( $("#textbox").val() );
+          speechSynthesis.speak(words);
+    });
+
+
+
+
+  });
+  </script>
+
+  <div class="box">
+
+
+
+    
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+      <style>
+        .bruh {
+          font-weight: 800;
+          font-size: 5.9em;
+          text-transform: uppercase;`
+          letter-spacing: 0.5em;
+          color: white;
+        }
+
+        .bruh .word {
+          display: inline-block;
+          line-height: 1em;
+        }
+        </style>
+        <script>
+          anime.timeline({loop: true})
+        .add({
+          targets: '.bruh .word',
+          scale: [14,1],
+          opacity: [0,1],
+          easing: "easeOutCirc",
+          duration: 800,
+          delay: (el, i) => 800 * i
+        }).add({
+          targets: '.bruh',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+        </script>
+      </center>
+
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+      @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+      :root {
+
+
+        --green: linear-gradient(to right, orange, tomato );
+
+      }
+
+
+
+
+      h1 {
+        text-align: center;
+        margin: 2rem auto;
+      }
+
+      .box {
+          background: var(--green);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          margin: 1rem;
+          border-radius: 10px;
+          box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+          transform: translateX(400%);
+          transition: transform 0.4s ease;
+           text-shadow: 4px 4px 10px black;
+        }
+
+        .box:nth-of-type(even) {
+            transform: translateX(-400%);
+        }
+
+        .box.show {
+          transform: translateX(0);
+        }
+
+        .box h2 {
+          font-size: 36px;
+        }
+
+
+
+
+        </style>
+        <script>
+          const boxes = document.querySelectorAll('.box');
+
+        window.addEventListener('scroll', checkBoxes);
+
+        checkBoxes();
+        function checkBoxes() {
+          const triggerBottom = (window.innerHeight / 5 * 4);
+
+          boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top;
+
+            if(boxTop < triggerBottom) {
+              box.classList.add('show');
+            } else {
+              box.classList.remove('show');
+            }
+          })
+        }
+        </script>
+        <br>
+        <center><textarea id="textbox2" disabled="disabled" style="width:500px;">
+    On Climate Buddy's Website, we offer a variety of free games that educate the user about global warming. With these games, you can truly understand the impacts that global warming is having on all of our lives.
+       </textarea><center>
+<br>
+
+
+      <div class="btn2" style="width: auto; margin: 0 auto;margin-top: 10px;width: 300px;">Convert to Speech</div>
+
+      <br><br>
+
+
+<div class="container">
+  <div class="block image-block slideright">
+    <figure>
+    <center>  <img src="https://mir-s3-cdn-cf.behance.net/projects/404/55441058396839.Y3JvcCwxMTg0LDkyNiwxNjMsMA.jpg" style="border-radius: 10px; width: 500px;"></center>
+    </figure>
+  </div>
+
+
+</div>
+<style>
+  .top{
+}
+h1{
+  text-align: center;
+}
+
+.block{
+  display: inline-block;
+  height: 100vh;
+}
+
+.image-block{
+
+}
+
+figure{
+  position: relative;
+		height: 100vh;
+		width: 34vw;
+  text-align: center;
+}
+
+
+
+.slideright{
+	transform: translateX(50%);
+	transition: all .8s ease-out;
+}
+.slideright.slideinright{
+	transform: translateX(0);
+}
+</style>
+<script>
+  $(window).scroll(function() {
+
+   var winTop = $(window).scrollTop();
+
+   $(".slideright").each(function(){
+     var pos = $(this).offset().top;
+     if (pos < winTop + 600) {
+       $(this).addClass("slideinright");
+     }
+   });
+
+   $(".slideleft").each(function(){
+     var pos = $(this).offset().top;
+     if (pos < winTop + 600) {
+       $(this).addClass("slideinleft");
+     }
+   });
+
+ });
+ </script>
+      <style>
+
+      #textbox2 { text-align:center;color: black; margin: 0 auto; border: 2px solid black; background-color: white; min-height: 200px; font-size: 1.28em; line-height:1.2em; border: none;padding: 15px; font-weight: normal; border-radius: 6px; }
+      </style>
+      <Script>
+        $( document ).ready(function() {
+
+      var utterance = new window.SpeechSynthesisUtterance();
+          utterance.volume = 1;
+          utterance.rate = 1;
+          utterance.pitch = 1;
+          utterance.lang = 'en-US';
+      delay = 10000000000000000000000000;
+
+        $('.btn2').on('click', function(){
+              var words = new SpeechSynthesisUtterance( $("#textbox2").val() );
+              speechSynthesis.speak(words);
+        });
+
+
+
+
+      });
+      </script>
+      <style>
+
+            .btn2 {
+              display: inline-block;
+              margin: 15px 15px 0;
+              padding: .6em 1.1em;
+              font-size: 26px;
+              font-size: 1.625rem;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: tomato;
+              border-radius: 3px;
+              -webkit-background-clip: padding-box;
+              background-clip: padding-box;
+              -webkit-box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+              box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+              border: none;
+              -webkit-transition: -webkit-box-shadow .3s;
+              transition: box-shadow .3s;
+            }
+            .btn2:hover, a.btn2:focus {
+              -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+              box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+              -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+              transition-timing-function: cubic -bezier(0.6, 4, 0.3, 0.8);
+              -webkit-animation: gelatine 0.5s 1;
+              animation: gelatine 0.5s 1;
+            }
+
+
+            .bt2n:active,
+            .btn-secondary:active {
+              background: #4ecdc4;
+              -webkit-transition-duration: 0;
+              transition-duration: 0;
+              -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+              box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+            }
+
+
+            @keyframes gelatine {
+              from, to {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+              }
+
+              25% {
+                -webkit-transform: scale(0.9, 1.1);
+                  transform: scale(0.9, 1.1);
+                }
+
+              50% {
+                -webkit-transform: scale(1.1, 0.9);
+                transform: scale(1.1, 0.9);
+              }
+
+              75% {
+                -webkit-transform: scale(0.95, 1.05);
+                transform: scale(0.95, 1.05);
+              }
+
+              from, to {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+              }
+
+              25% {
+                -webkit-transform: scale(0.9, 1.1);
+                transform: scale(0.9, 1.1);
+              }
+
+              50% {
+                -webkit-transform: scale(1.1, 0.9);
+                transform: scale(1.1, 0.9);
+              }`
+
+              75% {
+                -webkit-transform: scale(0.95, 1.05);
+                transform: scale(0.95, 1.05);
+              }
+            }
+            @-webkit-keyframes gelatine {
+              from, to {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+              }
+
+              25% {
+                -webkit-transform: scale(0.9, 1.1);
+                transform: scale(0.9, 1.1);
+              }
+
+              50% {
+                -webkit-transform: scale(1.1, 0.9);
+                transform: scale(1.1, 0.9);
+              }
+
+              75% {
+                -webkit-transform: scale(0.95, 1.05);
+                transform: scale(0.95, 1.05);
+              }
+
+              from, to {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+              }
+
+              25% {
+                -webkit-transform: scale(0.9, 1.1);
+                transform: scale(0.9, 1.1);
+              }
+
+              50% {
+                -webkit-transform: scale(1.1, 0.9);
+                transform: scale(1.1, 0.9);
+              }
+
+              75% {
+                -webkit-transform: scale(0.95, 1.05);
+                transform: scale(0.95, 1.05);
+              }
+            }
+
+            </style>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root {
+
+  --green: linear-gradient(to right, orange, tomato );
+
+}
+
+
+
+h1 {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.box {
+  background: var(--green);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 36px;
+}
+
+
+
+
+</style>
+<Script>
+  const boxes = document.querySelectorAll('.box');
+
+window.addEventListener('scroll', checkBoxes);
+
+checkBoxes(); // shows initial box(es)
+
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 5 * 4);
+
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top;
+
+    if(boxTop < triggerBottom) {
+      box.classList.add('show');
+    } else {
+      box.classList.remove('show');
+    }
+  })
+}
+</script>
+
+
+
+
+
+
+
+
+<div id="footer">
+
+  <div class="lookWrap">
+    <div id="look">
+      <div class="section">
+        <h3 style="font-size: 30px; ">Support</h3>
+        <a href="#" style="font-size: 18px;">Articles</a>
+        <a href="#" style="font-size: 18px;">games</a>
+        <a href="#" style="font-size: 18px;">home</a>
+
+</div>
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfE1lwIawrSuih_PF3zmutsB1ekdJOB-dUlHKubVcOo5mcWwg/viewform?embedded=true" width="640" height="403" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+</div>
+<style>
+  body{
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+#footer{
+  margin-bottom: -150px;
+  clear: both;
+}
+
+.tomottoWrap{
+  position: relative;
+}
+
+#tomotto{
+  text-align: center;
+  width: 960px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  line-height: 36px;
+  margin: auto;
+}
+
+.lookWrap{
+  position: relative;
+  background-color: orange;
+  float: left;
+  width: 100%;
+}
+
+#look{
+  margin: auto;
+  width: 700px;
+}
+
+.section{
+  overflow: hidden;
+  float: left;
+  display: inline;
+  width: 160px;
+  margin: 0 15px 15px 0;
+  font: 10pt verdana;
+  line-height: 1.6em;
+}
+
+.section h3{
+  font-weight: normal;
+  font: 12pt Georgia;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.section a{
+  display: block;
+}
+
+.legality{
+  margin: auto;
+  width: 700px;
+  text-align: center;
+  clear: both;
+  font: 10pt verdana;
+  line-height: 2em;
+  padding: 40px 0 0 0;
+}
+</style>

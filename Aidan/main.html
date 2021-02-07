@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+
+<head>
+
+
+<meta charset="utf-8">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+
+html {
+
+
+scroll-behavior: smooth;
+
+
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+<header>
+
+
+<div class="inner-width" id="top">
+
+
+<a href="" class="logo1"><img src="assets/logo.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></a>
+
+
+
+
+
+
+<a href="" class="logo"><img src="assets/logotxt.png"></a>
+
+
+
+
+
+
+<i class="menu-toggle-btn fas fa-bars"></i>
+
+
+
+
+
+
+<nav class="navigation-menu">
+
+
+
+
+
+
+<a href="index.html"style="color: white;" ><i class="fas fa-home home"></i>Home</a>
+<a href="main.html"style="color: white;"><i class="fab fa-buffer works"></i>Games</a>
+<a href="news.html"style="color: white;"><i class="fas fa-users team"></i>News</a>
+<a href="index.html#footer" style="color: white;"><i class="fas fa-headset contact"></i>Contact</a>
+
+
+<a href="index.html#learn"style="color: white;"><i class="fas fa-align-left about"></i>Learn</a>
+
+
+
+
+
+
+</nav>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<style>
+
+*{
+
+
+margin: 0;
+
+
+padding: 0;
+
+
+text-decoration: none;
+
+
+
+
+}
+
+header{
+
+
+height: 90px;
+
+
+background: linear-gradient(to right, orange, orange);
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+width: 100%;
+
+
+}
+
+
+.inner-width{
+
+
+max-width: 1000px;
+
+
+padding: 0 10px;
+
+
+margin: auto;
+
+
+}
+
+
+
+
+
+
+.logo{
+
+
+float: left;
+
+
+padding: 20px 0;
+
+
+margin-top: 4px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.logo img{
+
+
+height: 30px;
+
+
+}
+
+
+.logo1{
+
+
+float: left;
+
+
+padding: 20px 0;
+
+
+margin-top: -10px;
+
+
+}
+
+
+
+
+
+
+.logo1 img{
+
+
+height: 80px;
+
+margin-top: -8px;
+
+border-radius: 4px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation-menu{
+
+
+float: right;
+
+
+display: flex;
+
+
+align-items: center;
+
+
+min-height: 90px;
+
+
+}
+
+
+
+
+
+
+.navigation-menu a{
+
+
+margin-left: 10px;
+
+
+color: #ddd;
+
+
+text-transform: uppercase;
+
+
+font-size: 18spx;
+
+
+padding: 12px 20px;
+
+
+border-radius: 4px;
+
+
+transition: .3s linear;
+
+
+}
+
+
+
+
+
+
+.navigation-menu a:hover{
+
+
+background: #fff;
+
+
+color: #2f3640;
+
+
+transform: scale(1.1);
+
+
+}
+
+
+
+
+
+
+.navigation-menu i{
+
+
+margin-right: 8px;
+
+
+font-size: 16px;
+
+
+}
+
+
+
+
+
+
+.home{
+
+
+color: #ff6b6b;
+
+
+}
+
+
+
+
+
+
+.about{
+
+
+color: #56F0FF;
+
+
+}
+
+
+
+
+
+
+.works{
+
+
+color: #feca57;
+
+
+}
+
+
+
+
+
+
+.team{
+
+
+color: #5f27cd;
+
+
+}
+
+
+
+
+
+
+.contact{
+
+
+color: #1dd1a1;
+
+
+}
+
+
+
+
+
+
+.menu-toggle-btn{
+
+
+
+
+
+
+float: right;
+
+
+
+
+
+
+height: 90px;
+
+
+
+
+
+
+line-height: 90px !important;
+
+
+
+
+
+
+
+
+
+
+color: #fff;
+
+
+
+
+
+
+font-size: 26px;
+
+
+
+
+
+
+display: none !important;
+
+
+
+
+
+
+cursor: pointer;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+
+
+
+
+
+.menu-toggle-btn{
+
+
+
+
+
+
+display: block !important;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+.navigation-menu{
+
+
+
+
+
+
+position: fixed;
+
+
+
+
+
+
+width: 100%;
+
+
+
+
+
+
+max-width: 400px;
+background: #172b4d;
+top: 90px;
+right: 0;
+display: none;
+padding: 20px 40px;
+box-sizing: border-box;
+
+}
+
+.navigation-menu::before{
+
+content: "";
+
+border-left: 10px solid transparent;
+
+border-bottom: 10px solid #172b4d;
+
+
+
+
+
+
+position: absolute;
+
+
+
+
+
+
+top: -10px;
+
+
+
+
+
+
+right: 10px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation-menu a{
+
+
+
+
+
+
+display: block;
+
+
+
+
+
+
+margin: 10px 0;
+
+
+}
+
+
+
+
+
+
+.navigation-menu.active{
+
+
+
+
+
+
+display: block;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+$(".menu-toggle-btn").click(function(){
+
+
+$(this).toggleClass("fa-times");
+
+
+$(".navigation-menu").toggleClass("active");
+
+
+});
+
+
+</script>
+
+<body>
+<div id="img">
+<br><br>
+
+<center><p style="font-size: 80px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>How to play</b></p>
+<br>
+<br><br>
+</div><div id="bck">
+
+<style>
+#img {
+  background: linear-gradient(to right, orange, orange );
+width: 100%;
+border-bottom-left-radius: 80px;
+border-bottom-right-radius: 80px;
+box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+}
+</style>
+<br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<style>
+  .ml14 {
+  font-weight: 650;
+  font-size: 6em;
+  color: #262526F2;
+ text-shadow: 4px 4px 10px tomato;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+<script>
+  var textWrapper = document.querySelector('.ml14 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml14 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeInOutExpo",
+    duration: 900
+  }).add({
+    targets: '.ml14 .letter',
+    opacity: [0,1],
+    translateX: [40,0],
+    translateZ: 0,
+    scaleX: [0.3, 1],
+    easing: "easeOutExpo",
+    duration: 800,
+    offset: '-=600',
+    delay: (el, i) => 150 + 25 * i
+  }).add({
+    targets: '.ml14',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  });
+  </script>
+  <center><div id="txt" style="width: 60%;">
+<div class="button_cont" align="center"><a class="example_c" href="" rel="nofollow noopener">Start playing now!</a></div>
+<style>
+  .example_c {
+color: #494949 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+
+.example_c:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+}
+</style>
+
+      <center><textarea id="textbox" disabled="disabled">
+Use your voice to control what events. Try to make the most eco-friendly enviorment along-side many job oportunities as you can. Make sure that at least 10% of all trees in the town remain for it to still be home to animals and wildlife. Good luck!
+
+        </textarea><center>
+
+    <div class="btn" id="learn" style="width: auto; margin: 0 auto;margin-top: 10px;width: 300px;">Convert to Speech</div>
+<br><br>
+<center><img src="https://document-export.canva.com/GY4zo/DAEVZTGY4zo/26/thumbnail/lJUZhhLoz5MybGAPyKbs7Q-0001-16537683306.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20210206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210206T082219Z&X-Amz-Expires=53767&X-Amz-Signature=b9cd8bc717aedcf40a4a6f5050026429d25a890b53612e2a5d03ed9d48f925c7&X-Amz-SignedHeaders=host&response-expires=Sat%2C%2006%20Feb%202021%2023%3A18%3A26%20GMT" style="width: 60%; height: 50%; border-radius: 6px;"></center>
+<br>
+    <style>
+
+    textarea { text-align:center;width:70%;color: black; margin: 0 auto; border: 2px solid black; background-color: white; min-height: 200px; font-size: 1.28em; line-height:1.2em; border: none;padding: 15px; font-weight: normal; border-radius: 6px; }
+
+    .btn {
+      display: inline-block;
+      margin: 15px 15px 0;
+      padding: .6em 1.1em;
+      font-size: 26px;
+      font-size: 1.625rem;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: tomato;
+      border-radius: 3px;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      -webkit-box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+      box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+      border: none;
+      -webkit-transition: -webkit-box-shadow .3s;
+      transition: box-shadow .3s;
+    }
+    .btn:hover, a.btn:focus {
+      -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+      box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+      -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+      transition-timing-function: cubic -bezier(0.6, 4, 0.3, 0.8);
+      -webkit-animation: gelatine 0.5s 1;
+      animation: gelatine 0.5s 1;
+    }
+
+
+    .btn:active,
+    .btn-secondary:active {
+      background: #4ecdc4;
+      -webkit-transition-duration: 0;
+      transition-duration: 0;
+      -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+      box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+    }
+
+
+    @keyframes gelatine {
+      from, to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+
+      25% {
+        -webkit-transform: scale(0.9, 1.1);
+          transform: scale(0.9, 1.1);
+        }
+
+      50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+      }
+
+      75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+      }
+
+      from, to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+
+      25% {
+        -webkit-transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
+      }
+
+      50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+      }`
+
+      75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+      }
+    }
+    @-webkit-keyframes gelatine {
+      from, to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+
+      25% {
+        -webkit-transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
+      }
+
+      50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+      }
+
+      75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+      }
+
+      from, to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+
+      25% {
+        -webkit-transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
+      }
+
+      50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+      }
+
+      75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+      }
+    }
+
+    </style>
+
+
+</div></center>
+
+<div id="footer">
+
+<div class="lookWrap">
+  <div id="look">
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfE1lwIawrSuih_PF3zmutsB1ekdJOB-dUlHKubVcOo5mcWwg/viewform?embedded=true" width="640" height="403" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+</div>
+<style>
+body{
+color: #f2f2f2;
+margin: 0;
+padding: 0;
+}
+
+a{
+color: #f2f2f2;
+text-decoration: none;
+}
+
+#footer{
+margin-bottom: -150px;
+clear: both;
+}
+
+.tomottoWrap{
+position: relative;
+}
+
+#tomotto{
+text-align: center;
+width: 960px;
+letter-spacing: 2px;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+line-height: 36px;
+margin: auto;
+}
+
+.lookWrap{
+position: relative;
+background-color: orange;
+float: left;
+width: 100%;
+}
+
+#look{
+margin: auto;
+width: 700px;
+}
+
+.section{
+overflow: hidden;
+float: left;
+display: inline;
+width: 160px;
+margin: 0 15px 15px 0;
+font: 10pt verdana;
+line-height: 1.6em;
+}
+
+.section h3{
+font-weight: normal;
+font: 12pt Georgia;
+text-transform: uppercase;
+color: #f2f2f2;
+}
+
+.section a{
+display: block;
+}
+
+.legality{
+margin: auto;
+width: 700px;
+text-align: center;
+clear: both;
+font: 10pt verdana;
+line-height: 2em;
+padding: 40px 0 0 0;
+}
+</style>

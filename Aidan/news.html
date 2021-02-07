@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+
+<head>
+
+
+<meta charset="utf-8">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+
+html {
+
+
+scroll-behavior: smooth;
+
+
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+<header>
+
+
+<div class="inner-width" id="top">
+
+
+<a href="" class="logo1"><img src="assets/logo.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></a>
+
+
+
+
+
+
+<a href="" class="logo"><img src="assets/logotxt.png"></a>
+
+
+
+
+
+
+<i class="menu-toggle-btn fas fa-bars"></i>
+
+
+
+
+
+
+<nav class="navigation-menu">
+
+
+
+
+
+
+<a href="index.html"style="color: white;" ><i class="fas fa-home home"></i>Home</a>
+<a href="main.html"style="color: white;"><i class="fab fa-buffer works"></i>Games</a>
+<a href="news.html"style="color: white;"><i class="fas fa-users team"></i>News</a>
+<a href="index.html#footer" style="color: white;"><i class="fas fa-headset contact"></i>Contact</a>
+
+
+<a href="index.html#learn"style="color: white;"><i class="fas fa-align-left about"></i>Learn</a>
+
+
+
+
+
+
+</nav>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<style>
+
+*{
+
+
+margin: 0;
+
+
+padding: 0;
+
+
+text-decoration: none;
+
+
+
+
+}
+
+header{
+
+
+height: 90px;
+
+
+background: linear-gradient(to right, orange, tomato );
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+width: 100%;
+
+
+}
+
+
+.inner-width{
+
+
+max-width: 1000px;
+
+
+padding: 0 10px;
+
+
+margin: auto;
+
+
+}
+
+
+
+
+
+
+.logo{
+
+
+float: left;
+
+
+padding: 20px 0;
+
+
+margin-top: 4px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.logo img{
+
+
+height: 30px;
+
+
+}
+
+
+.logo1{
+
+
+float: left;
+
+
+padding: 20px 0;
+
+
+margin-top: -10px;
+
+
+}
+
+
+
+
+
+
+.logo1 img{
+
+
+height: 80px;
+
+margin-top: -8px;
+
+border-radius: 4px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation-menu{
+
+
+float: right;
+
+
+display: flex;
+
+
+align-items: center;
+
+
+min-height: 90px;
+
+
+}
+
+
+
+
+
+
+.navigation-menu a{
+
+
+margin-left: 10px;
+
+
+color: #ddd;
+
+
+text-transform: uppercase;
+
+
+font-size: 18spx;
+
+
+padding: 12px 20px;
+
+
+border-radius: 4px;
+
+
+transition: .3s linear;
+
+
+}
+
+
+
+
+
+
+.navigation-menu a:hover{
+
+
+background: #fff;
+
+
+color: #2f3640;
+
+
+transform: scale(1.1);
+
+
+}
+
+
+
+
+
+
+.navigation-menu i{
+
+
+margin-right: 8px;
+
+
+font-size: 16px;
+
+
+}
+
+
+
+
+
+
+.home{
+
+
+color: #ff6b6b;
+
+
+}
+
+
+
+
+
+
+.about{
+
+
+color: #56F0FF;
+
+
+}
+
+
+
+
+
+
+.works{
+
+
+color: #feca57;
+
+
+}
+
+
+
+
+
+
+.team{
+
+
+color: #5f27cd;
+
+
+}
+
+
+
+
+
+
+.contact{
+
+
+color: #1dd1a1;
+
+
+}
+
+
+
+
+
+
+.menu-toggle-btn{
+
+
+
+
+
+
+float: right;
+
+
+
+
+
+
+height: 90px;
+
+
+
+
+
+
+line-height: 90px !important;
+
+
+
+
+
+
+
+
+
+
+color: #fff;
+
+
+
+
+
+
+font-size: 26px;
+
+
+
+
+
+
+display: none !important;
+
+
+
+
+
+
+cursor: pointer;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+
+
+
+
+
+.menu-toggle-btn{
+
+
+
+
+
+
+display: block !important;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+.navigation-menu{
+
+
+
+
+
+
+position: fixed;
+
+
+
+
+
+
+width: 100%;
+
+
+
+
+
+
+max-width: 400px;
+background: #172b4d;
+top: 90px;
+right: 0;
+display: none;
+padding: 20px 40px;
+box-sizing: border-box;
+
+}
+
+.navigation-menu::before{
+
+content: "";
+
+border-left: 10px solid transparent;
+
+border-bottom: 10px solid #172b4d;
+
+
+
+
+
+
+position: absolute;
+
+
+
+
+
+
+top: -10px;
+
+
+
+
+
+
+right: 10px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation-menu a{
+
+
+
+
+
+
+display: block;
+
+
+
+
+
+
+margin: 10px 0;
+
+
+}
+
+
+
+
+
+
+.navigation-menu.active{
+
+
+
+
+
+
+display: block;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+$(".menu-toggle-btn").click(function(){
+
+
+$(this).toggleClass("fa-times");
+
+
+$(".navigation-menu").toggleClass("active");
+
+
+});
+
+
+</script>
+
+<body>
+
+  <br>
+  <center><h1 style="font-size: 80px; color: black;"><b>Recent News</b></h1></center>
+  <br>
+  <center><h1 style="font-size: 40px; color: black;"><b>How you can help as a citizen</b></h1></center>
+
+<br> <center><div id="txt" style="width: 60%;">
+
+<center><p style="font-size: 17px; color: black;">  How do we make this happen?  In order to reduce the amount of warming, we need to reduce the amount of greenhouse gas in the atmosphere.  Carbon dioxide (CO2) stays in the atmosphere for 30 to 100 years until most of it is removed by plants and natural processes, although about 20% of it can stay for thousands of years.
+      Methane is a stronger greenhouse gas, but it breaks down in about 10 years.  So greenhouse gases are removed from the atmosphere through natural processes.  Right now, we put more greenhouse gas into the atmosphere than is taken out by natural processes. So even if we put a little less in, the concentrations will continue to rise over time. We have to put a lot less in if we want to have less greenhouse gas in the atmosphere. And we have to start now. The longer we wait, the harder it will be to cut the gases enough to reach our goal – do you see why?
+      <br><br>
+      A good motto is “Burn calories, not fossil fuels.” For example, we could walk or ride a bicycle instead of getting into the car to go just a few blocks away, and we can rake leaves by hand rather than using a leaf blower.
+      Almost everything we buy was made using fossil fuels. So we can reduce our carbon footprint by buying less, reusing more, repairing things instead of replacing them, and using less packaging.
+      <br><br>
+      A very important way to cut our use of fossil fuels is by using renewable energy instead. We can do that by putting solar panels on the roofs of our homes and businesses. New York State helps people switch to solar energy by helping with the cost of installing solar panels. If solar isn’t practical for us, we can ask the electric company to send us electricity from renewable sources like waterfalls, solar farms, and windmills. We can also ask our government to set aside money for renewable energy development.
+      <br><br>
+      About 14% of all greenhouse gas emissions comes from raising farm animals for food.  Much of this is from the methane gas that animals expel as they digest their food; the rest is from transportation and other uses of energy.  Changing how we raise farm animals could cut that by 30%.  We can help by eating less meat and dairy, or by buying our meat and dairy products from farmers who use climate-smart practices.
+
+    <h2>
+      As a community
+    </h2>
+      If a few of us do the things we’ve just described, that’s a start.  But how do we get lots of people to do them? People usually don’t want to do things that are inconvenient or that will cost them money. One of the problems is that when we make poor choices today, the damage takes place in the future, and it’s hard for people to make the connection between their choices today and future consequences.  The costs of those poor choices fall on people in the future.  One way to fix this is to make those costs fall on the people who make those choices today.  This will make some things we do today more expensive, but that will encourage people and businesses to make better choices.
+      <br><br>
+      There are ways of calculating future costs and adding them to the cost of things now, so that people see the true long term cost. One way is by charging industries a carbon tax (an extra tax on the things they do that contribute to the release of greenhouse gases).  Another way is by making regulations (rules) that make it illegal to hurt the environment or that make industries pay a penalty if they do it. This will make them want to change the way they do things. For example, because of laws in California, manufacturers are already making many more electric cars, and many are putting solar panels on factory roofs to run their machinery.
+      <br><br>
+      The downside to a carbon tax and environmental regulation is that they might raise prices or cost jobs for awhile, as the economy adjusts to these changes.  The upside is that people and businesses will make better choices for the environment.  We need to decide how much extra we’re willing to pay now in order to protect the environment over the long run.
+<br><hr style="border: 2px solid black;">
+  <center><h1 style="font-size: 40px; color: black;"><b>Climate change may have had 'key role' in pandemic: study</b></h1></center>
+<br>
+<center><p style="font-size: 17px; color: black;">Climate change may have played a "key role" in the transmission of the novel coronavirus to humans by driving several species of pathogen-carrying bats into closer contact, research showed on Friday.
+
+The virus, which has killed more than two million people and caused unprecedented global disruption, is thought to have originated in bats in Southeast Asia.
+
+Researchers from the University of Cambridge used temperature and rainfall data over the last 100 years to model populations of dozens of bat species based on their habitat requirements.
+<br><br>
+They found that over the last century, 40 species had relocated to southern China, Laos and Myanmar -- the area where genetic analysis suggests the virus known as SARS-CoV-2 first appeared.
+
+Since each bat species carries an average of 2.7 coronaviruses, the researchers said 100 strains of coronavirus were now concentrated in this "hotspot" area.
+"Our paper is a long way away from saying the pandemic would not have happened without climate change," lead author Robert Meyer of Cambridge's zoology department told AFP.
+<br><br>
+"But I find it difficult to see that this climate-driven increase in bats and bat-borne coronaviruses make something like this less likely to happen."
+While the precise chain of SARS-CoV-2 transmission from animals to humans is yet to be determined, Beyer said the changing climate and habitat destruction in Asia had driven virus-carrying species into ever closer contact with human populations.
+
+"It's two sides of a similar coin: we penetrate deeper into their habitat but at the same time climate change can have the effect that it pushes the pathogen in our direction," he said.
+
+The study, published in the journal Science of the Total Environment, urged governments to take measures including limiting urban expansion and farming, which it said would help to manage the risk of another pandemic of a disease endemic in wild animals.
+<br><br>
+
+"Climate change certainly has a role to play in changing species distributions to increase ecological hazard," said Jones, who was not involved in the study.
+
+"However, spillover risk is a complex interplay of not only ecological hazard but human exposure and vulnerability."
+
+Habitat loss, for example, has also been a major driver in pushing wild animal species closer to human populations.
+
+</p></center>
+
+  </div>
+<br>
+<br>
+
+<div id="footer">
+
+  <div class="lookWrap">
+    <div id="look">
+      <div class="section">
+        <h3 style="font-size: 30px; ">Support</h3>
+        <a href="#" style="font-size: 18px; color: red;">Articles</a>&emsp;
+        <a href="#" style="font-size: 18px; color: red;">games</a>&emsp;
+        <a href="#" style="font-size: 18px; color: red;">home</a>&emsp;
+
+</div>
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfE1lwIawrSuih_PF3zmutsB1ekdJOB-dUlHKubVcOo5mcWwg/viewform?embedded=true" width="640" height="403" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+</div>
+<style>
+
+
+
+
+.lookWrap{
+  position: relative;
+  background-color: orange;
+  float: left;
+  width: 100%;
+}
+
+#look{
+  margin: auto;
+  width: 700px;
+}
+
+
+
+
+</style>
